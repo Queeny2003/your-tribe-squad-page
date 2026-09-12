@@ -1,0 +1,47 @@
+body { 
+    background-color: #fff8ed;
+    color: #3d342b;
+}
+
+.eten-inhoud {
+    display: flex;
+    gap: 40px;
+
+}
+
+.plattegrond { 
+    width: 50%;
+    height: 600px;
+    background-color: #dfe8d5;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.informatie { 
+    width: 50%;
+}
+
+.gebouw { 
+    position: absolute;
+    width: 160px;
+    height: 100px;
+
+    border: none;
+    border-radius: 18px;
+
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gebouw strong {
+    display: block;
+    font-size: 24px;
+}
+
+.gebouw span {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
