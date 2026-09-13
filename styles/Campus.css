@@ -99,12 +99,6 @@ body {
 
 }
 
-.studio-hva { 
-    top: 32%;
-    left: 83%;
-    background-color: #5fa8a0;
-}
-
 .gebouw:hover { 
     transform: scale(1.08);
     z-index: 10;
