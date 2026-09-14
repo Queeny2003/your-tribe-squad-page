@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Maven pro';
+    background: #f7f3e8;
+    color: #3d3226;
+    text-align: center;
+    padding: 80px 0;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #4a6b3a;
+    font-size: 46px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.personen {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 35px 60px;
+    background: #fffdf7;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    box-shadow: 0 10px 25px rgba(74, 107, 58, 0.12);
+    align-items: center;
+}
+
+.personen::-webkit-scrollbar {
+    display: none;
+}
+
+.dier {
+    min-width: 110px;
+    text-decoration: none;
+    color: #3d3226;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.icoon {
+    font-size: 60px;
+    transition: 0.3s;
+}
+
+.dier:hover .icoon {
+    transform: scale(1.35) rotate(-5deg);
+}
+
+.dier:hover p {
+    color: #4a6b3a;
+}
+
+.dier p {
+    margin-top: 12px;
+    font-size: 15px;
+    color: #7a6a55;
+}
+
+.knop-vak {
+    margin-top: 50px;
+}
+
+.knop {
+    display: inline-block;
+    background: #6b8e4e;
+    color: #fffdf7;
+    padding: 15px 35px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 6px 15px rgba(107, 142, 78, 0.35);
+    transition: 0.3s;
+}
+
+.knop:hover {
+    background: #557239;
+    transform: translateY(-3px);
+}
