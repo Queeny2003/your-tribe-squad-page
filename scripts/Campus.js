@@ -91,10 +91,5 @@ const gebouwInfo = {
         openingstijden: op reguliere lesdagen doorgaans vanaf 07:30; de actuele geregistreerde uren verschillen per dag en vakanties hebben afwijkende tijden. 
     }
 
-    Studio hva: {
-        naam: 
-        eten:
-        weetje:
-        locatie:
-    }
+
 }
