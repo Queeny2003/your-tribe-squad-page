@@ -1,0 +1,385 @@
+body { 
+    background-color: #fff8ed;
+    color: #3d342b;
+}
+
+.eten-inhoud {
+    display: flex;
+    gap: 40px;
+
+}
+
+.plattegrond { 
+    width: 65%;
+    height: 600px;
+    background-color: #dfe8d5;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.informatie { 
+    width: 35%;
+}
+
+.gebouw { 
+    position: absolute;
+    width: 105px;
+    height: 62px;
+
+    border: none;
+    border-radius: 12px;
+
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+
+    z-index: 6;
+}
+
+.studio-hva {
+    width: 100px;
+    height: 60px;
+
+    border: none;
+    border-radius: 15px;
+}
+
+.gebouw strong {
+    display: block;
+    font-size: 18px;
+}
+
+.gebouw span {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.bph {
+    top: 49%;
+    left: 39%;
+    background-color: #e9874a;
+}
+
+.kmh {
+    top: 27%;
+    left: 7%;
+    background-color: #e9b949;
+}
+
+.wbh { 
+    top: 31%;
+    left: 43%;
+    background-color: #6fa36b;
+}
+
+.tth {
+    left: 39%;
+    top: 39%;
+    background-color: #c27ba0;
+}
+
+.ksh {
+    left: 68%;
+    top: 35%;
+    background-color: #6f9ed6;
+}
+
+.mlh {
+    left: 15%;
+    top: 38%;
+    background-color: #d46a6a; 
+}
+
+.jmh {
+    left: 15%;
+    top: 38%;
+    background-color: #8c6bb1;
+
+}
+
+.gebouw:hover { 
+    transform: scale(1.08);
+    z-index: 10;
+}
+
+.informatie {
+    width: 50%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px;
+    min-height: 500px;
+}
+
+.gras { 
+    position: absolute;
+    background-color: #c8ddb8;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.gras-1 {
+    left: 20px;
+    top: 350px;
+
+    width: 100px;
+    height: 70px;
+}
+
+.gras-2 {
+    right: 20px;
+    top: 180px;
+
+    width: 90px;
+    height: 60px;
+}
+
+.boom { 
+    position: absolute;
+    font-size: 18px;
+
+    z-index: 4;
+}
+
+.boom-1 {
+    left: 32%;
+    top: 30%;
+}
+
+.boom-2 {
+    left: 35%;
+    top: 39%;
+}
+
+.boom-3 {
+    left: 60%;
+    top: 29%;
+}
+
+.boom-4 {
+    left: 63%;
+    top: 46%;
+}
+
+.boom-5 {
+    left: 26%;
+    top: 54%;
+}
+
+.boom-6 {
+    left: 58%;
+    top: 57%;
+}
+.water { 
+    position: absolute;
+
+    top: 83%;
+    left: -5%;
+
+    width: 110%;
+    height: 85px;
+
+    background: linear-gradient(#83ced9, #61b7c6);
+
+    border-radius: 10% 10% 30% 35%;
+
+    transition: rotate(-2deg);
+
+    text-align: center;
+    padding-top: 25px;
+
+    z-index: 1;
+}
+
+.weg-horizontaal { 
+    position: absolute;
+
+    left: 0;
+    top: 150px;
+
+    width: 100%;
+    height: 35px;
+
+    background-color: #d6d3cd;
+}
+
+.weg-verticaal {
+    position: absolute;
+
+    top: 80px;
+    left: 48%;
+
+    width: 40px;
+    height: 520px;
+
+    background-color: #d6d3cd;
+}
+
+.gebouw {
+    z-index: 3;
+}
+
+.water {
+    z-index: 2;
+}
+
+.hoofdweg {
+    position: absolute;
+
+    left: 52%;
+    top: 0;
+    width: 55px;
+    height: 100%;
+
+    background-color: #cbc9c2;
+
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+
+    z-index: 2;
+}
+
+.dwarsweg-boven {
+    position: absolute;
+
+    left: 0;
+    top: 22%;
+
+    width: 100%;
+    height: 32px;
+
+    background-color: #cbc9c2;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+
+    z-index: 2;
+}
+
+.kadeweg {
+    position: absolute;
+
+    left: 0;
+    top: 66%;
+
+    width: 100%;
+    height: 32px;
+
+    background-color: #cbc9c2;
+
+    z-index: 2;
+}
+
+
+.weg-horizontaal,
+.weg-verticaal {
+    z-index: 1;
+}
+
+.weg {
+    position: absolute;
+    background-color: #d6d3cd;
+    border: 3px solid white;
+    z-index: 1;
+}
+
+.weg-1 {
+    left: 0;
+    top: 200px;
+
+    width: 100%;
+    height: 35px;
+}
+
+.weg-2 {
+    left: 47%;
+    top: 80px;
+
+    width: 35px;
+    height: 520px;
+}
+
+.weg-3 {
+    left: 0;
+    top: 410px;
+
+    width: 100%;
+    height: 30px;
+}
+
+.weg-lijn { 
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-top: 2px dashed white;
+}
+
+.fietspad {
+    position: absolute;
+
+    background-color: #c86464;
+
+    z-index: 2;
+}
+
+.fietspad-1 {
+    position: absolute;
+    left: 48%;
+    top: 0;
+
+    width: 7px;
+    height: 68%;
+    background-color: #c86464;
+
+    z-index: 3;
+}
+
+.fietspad-2 {
+    position: absolute;
+    left: 0;
+    top: 64%;
+
+    width: 100%;
+    height: 7px;
+    background-color: #c86464;
+
+    z-index: 3;
+}
+
+.klein-gebouw {
+    position: absolute;
+
+    background-color: #d5d3cc;
+
+    border: 2px solid #c5c2ba;
+
+    border-radius: 4px;
+
+    z-index: 4;
+}
+
+.klein-1 {
+    left: 10px;
+    top: 260px;
+
+    width: 50px;
+    height: 70px;
+}
+
+.klein-2 {
+    right: 10px;
+    top: 350px;
+
+    width: 45px;
+    height: 90px;
+}
+
+.klein-3 {
+    left: 280px;
+    top: 150px;
+
+    width: 40px;
+    height: 50px;
+}
+
