@@ -1,32 +1,45 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
+
+   
 }
 
 body {
     font-family: 'Maven pro';
-    background: #f7f3e8;
+
+    background-image: url("greensquadpage.png"); 
+    background-size: 1920px 1080px;
+    backdrop-filter: blur(6px);
+
     color: #3d3226;
     text-align: center;
     padding: 80px 0;
     min-height: 100vh;
 
-    font-size: x-large;
+
+}
+
+.introductie {
+    padding: 20px;
+    background: #ece7d8;
+    opacity: 70%;
 }
 
 p {
-    padding-bottom: 20px;
+    font-size: 32px;
+    padding: 20px;
 }
 
 h1 {
+    padding: 0px 150px;
+    font-size: 64px;
     color: #4a6b3a;
-    font-size: 46px;
-    letter-spacing: 2px;
-    margin-bottom: 40px;
+
 }
 
 .personen {
+
     display: flex;
     gap: 30px;
     overflow-x: auto;
@@ -61,6 +74,8 @@ h1 {
     top: 0;
     transition: 0.2s ease;
 }
+
+
 
 .dier {
     min-width: 110px;
