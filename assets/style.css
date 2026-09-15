@@ -11,6 +11,12 @@ body {
     text-align: center;
     padding: 80px 0;
     min-height: 100vh;
+
+    font-size: x-large;
+}
+
+p {
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -26,7 +32,7 @@ h1 {
     overflow-x: auto;
     padding: 35px 60px;
     background: #fffdf7;
-    scrollbar-width: none;
+
     -ms-overflow-style: none;
     box-shadow: 0 10px 25px rgba(74, 107, 58, 0.12);
     align-items: center;
@@ -34,6 +40,26 @@ h1 {
 
 .personen::-webkit-scrollbar {
     display: none;
+}
+
+.scrollbar-track {
+    height: 15px;
+    background: #ece7d8;
+    border-radius: 10px;
+    margin: 0 60px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.scrollbar-thumb {
+    height: 100%;
+    background: #4a6b3a;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.2s ease;
 }
 
 .dier {
