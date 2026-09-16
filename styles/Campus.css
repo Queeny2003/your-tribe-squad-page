@@ -1,5 +1,9 @@
 body { 
-    background-color: #fff8ed;
+
+    background-image: url("../assets/greensquadpage.png"); 
+    background-size: cover;
+    backdrop-filter: blur(6px);
+    
     color: #3d342b;
 }
 
