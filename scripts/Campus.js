@@ -87,6 +87,31 @@ const gebouwInfo = {
         ov: "ongeveer 2–4 minuten lopen vanaf Weesperplein",
         openingstijden: "op reguliere lesdagen doorgaans vanaf 07:30; de actuele geregistreerde uren verschillen per dag en vakanties hebben afwijkende tijden.", 
     }
+};
+
+gebouwen.forEach(function (gebouw) {
+    gebouw.addEventListener("mouseenter", function () {
+        const naam = gebouw.dataset.building;
+        const info = gebouwInfo[naam];
+
+        if (!info) {
+            console.log ("geen info gevonden voor": , naam)
+            return;
+            
+        }
+
+ informatie.innerHTML = `
+            <h2>${info.naam}</h2>
+            <p>${info.intro}</p>
+            <h3>🍴 Eten</h3>
+            <p>${info.eten}</p>
+            <h3>🐾 Leuk weetje</h3>
+            <p>${info.weetje}</p>
+            <h3>📍 Locatie</h3>
+            <p>${info.adres}<br>${info.ov}<br>${info.openingstijden}</p>
+        `;
+    });
+});
 
 
 }
