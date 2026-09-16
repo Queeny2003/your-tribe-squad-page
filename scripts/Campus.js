@@ -1,22 +1,21 @@
 const gebouwen = document.querySelectorAll(".gebouw");
-
 const informatie = document.querySelector("#informatie");
 
 gebouwen.forEach(function (gebouw) {
 
-    gebouw.addEventListener("mouseenter", function() {
-        console.log("Je gaat over een gebouw");
+    gebouw.addEventListener("mouseenter", function () {
+
+        const naam = gebouw.dataset.building;
+        console.log(naam);
+
+        informatie.innerHTML = `
+            <h2>${naam}</h2>
+            <p>Hier komt straks de informatie</p>
+        `;
+
     });
 
-    const naam = gebouw.dataset.building;
-    console.log(naam);
-
 });
-
-informatie.innerHTML = `
-    <h2>${naam}</h2>
-    <p>Hier komt straks de informatie</p>
-`;
 
 const gebouwInfo = { 
     ksh: {
