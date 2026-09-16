@@ -5,21 +5,34 @@ body {
 
 .eten-inhoud {
     display: flex;
-    gap: 40px;
+    gap: 30px;
+    align-items: flex-start;
+
+    width: 95%;
+    max-width: 1400px;
+
+    margin: 0 auto;
 
 }
 
 .plattegrond { 
-    width: 65%;
-    height: 600px;
-    background-color: #dfe8d5;
+    
     position: relative;
+
+    width: 65%;  
+    aspect-ratio: 4 / 3; /*zorgt dat alles op zn plek blijft zitten ongeacht schermgrootte*/
+
+    background-color: #dfe8d5;
+    
     border-radius: 25px;
     overflow: hidden;
 }
 
+
 .informatie { 
     width: 35%;
+    height: 600px;
+
 }
 
 .gebouw { 
@@ -57,7 +70,7 @@ body {
 }
 
 .bph {
-    top: 49%;
+    top: 52%;
     left: 39%;
     background-color: #e9874a;
 }
@@ -88,7 +101,7 @@ body {
 
 .mlh {
     left: 15%;
-    top: 38%;
+    top: 15%;
     background-color: #d46a6a; 
 }
 
@@ -174,22 +187,28 @@ body {
 .water { 
     position: absolute;
 
-    top: 83%;
+    top: 67%;
     left: -5%;
 
     width: 110%;
-    height: 85px;
+    height: 13%;
 
     background: linear-gradient(#83ced9, #61b7c6);
 
-    border-radius: 10% 10% 30% 35%;
+    border-radius: 50% 40% 55% 35% / 35% 55% 40% 60%;
 
-    transition: rotate(-2deg);
+    transform: rotate(-2deg);
 
-    text-align: center;
-    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    z-index: 1;
+    color: white;
+    font-size: 14px;
+
+    padding: 0;
+
+    z-index: 3;
 }
 
 .weg-horizontaal { 
@@ -227,15 +246,18 @@ body {
 .hoofdweg {
     position: absolute;
 
-    left: 52%;
+    left: 48%;
     top: 0;
-    width: 55px;
+
+    width: 8%;
     height: 100%;
 
     background-color: #cbc9c2;
 
     border-left: 3px solid white;
     border-right: 3px solid white;
+
+    box-sizing: border-box;
 
     z-index: 2;
 }
@@ -244,14 +266,17 @@ body {
     position: absolute;
 
     left: 0;
-    top: 22%;
+    top: 28%;
 
     width: 100%;
-    height: 32px;
+    height: 6%;
 
     background-color: #cbc9c2;
+
     border-top: 3px solid white;
     border-bottom: 3px solid white;
+
+    box-sizing: border-box;
 
     z-index: 2;
 }
@@ -260,12 +285,17 @@ body {
     position: absolute;
 
     left: 0;
-    top: 66%;
+    top: 60%;
 
     width: 100%;
-    height: 32px;
+    height: 6%;
 
     background-color: #cbc9c2;
+
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+
+    box-sizing: border-box;
 
     z-index: 2;
 }
