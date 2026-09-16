@@ -9,7 +9,7 @@ body {
     font-family: 'Maven pro';
 
     background-image: url("greensquadpage.png"); 
-    background-size: 1920px 1080px;
+    background-size: cover;
     backdrop-filter: blur(6px);
 
     color: #3d3226;
