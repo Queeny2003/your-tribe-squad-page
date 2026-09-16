@@ -17,6 +17,7 @@ De website is gebouws met HTML, CSS en Javascript
 Hier hebben we de HREF gebruikt, daarmee wordt het visitekaartje gelinkt naar de betreffende persoon. Naast dat hebben we ook class gebruikt bij dier en icoon. Zodat we in css makkelijk de grootte etc kunnen veranderen en alles gelijk is.
 
 ### campus.html
+Hier hebben we button gebruikt, als je op het gebouw klikt dan vershijnt er informatie over het gebouw. Ook hier is gebruik gemaakt van class bij de plattegrond en het informatie vlak ernaast. Doordat dit gekoppeld is aan de css kon de plattegrond aangepast worden.
 
 # Licentie
 hoi

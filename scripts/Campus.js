@@ -6,11 +6,11 @@ gebouwen.forEach(function (gebouw) {
     gebouw.addEventListener("mouseenter", function () {
 
         const naam = gebouw.dataset.building;
-        console.log(naam);
+    
 
         informatie.innerHTML = `
             <h2>${naam}</h2>
-            <p>Hier komt straks de informatie</p>
+            <p>$Hier komt straks de informatie</p>
         `;
 
     });

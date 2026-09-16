@@ -34,8 +34,10 @@ body {
 
 .informatie { 
     width: 35%;
-    height: 600px;
-
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px;
+    min-width: 400px;
 }
 
 .gebouw { 
@@ -53,14 +55,6 @@ body {
     z-index: 6;
 }
 
-.studio-hva {
-    width: 100px;
-    height: 60px;
-
-    border: none;
-    border-radius: 15px;
-}
-
 .gebouw strong {
     display: block;
     font-size: 18px;
@@ -72,50 +66,60 @@ body {
     margin-top: 5px;
 }
 
-/*
 .bph {
-    top: 52%;
-    left: 39%;
+    top: 46%;
+    left: 18%;
+    width: 90px;
+    height: 50px;
     background-color: #e9874a;
 }
 
 .kmh {
-    top: 27%;
-    left: 7%;
+    top: 47%;
+    left: 87%;
+    width: 85px;
+    height: 50px;
     background-color: #e9b949;
 }
 
 .wbh { 
-    top: 30%;
-    left: 15%;
+    top: 27%;
+    left: 7%;
+    height: 130px;
     background-color: #6fa36b;
 }
 
 .tth {
-    left: 39%;
-    top: 39%;
+    left: 55%;
+    top: 27%;
+    width: 120px;
+    height: 130px;
     background-color: #c27ba0;
 }
 
 .ksh {
-    left: 68%;
-    top: 35%;
+    left: 75%;
+    top: 27%;
+    width: 85px;
     background-color: #6f9ed6;
 }
 
 .mlh {
-    left: 15%;
-    top: 10%;
+    left: 13%;
+    top: 4%;
+    width: 130px;
     background-color: #d46a6a; 
 }
 
 .jmh {
-    left: 15%;
-    top: 38%;
+    left: 75%;
+    top: 47%;
+    width: 85px;
+    height: 50px;
     background-color: #8c6bb1;
 
 }
-*/
+
 
 .gebouw:hover { 
     transform: scale(1.08);
@@ -139,16 +143,16 @@ body {
 
 
 .gras-1 {
-    left: 20px;
-    top: 350px;
+    left: 62%;
+    top: 6%;
 
-    width: 100px;
-    height: 70px;
+    width: 12%;
+    height: 10%;
 }
 
 .gras-2 {
-    right: 20px;
-    top: 180px;
+    left: 30%;
+    top: 76%;
 
     width: 90px;
     height: 60px;
@@ -162,42 +166,42 @@ body {
 }
 
 .boom-1 {
-    left: ;
-    top: 30%;
+    left: 34%;
+    top: 8%;
 }
 
 .boom-2 {
-    left: 35%;
-    top: 39%;
+    left: 82%;
+    top: 8%;
 }
 
 .boom-3 {
-    left: 60%;
-    top: 29%;
+    left: 35%;
+    top: 33%;
 }
 
 .boom-4 {
-    left: 63%;
-    top: 46%;
+    left: 92%;
+    top: 65%;
 }
 
 .boom-5 {
-    left: 26%;
-    top: 54%;
+    left: 12%;
+    top: 65%;
 }
 
 .boom-6 {
-    left: 58%;
-    top: 57%;
+    left: 90%;
+    top: 68%;
 }
 .water { 
     position: absolute;
 
-    top: 70%;
+    top: 60%;
     left: -5%;
 
     width: 110%;
-    height: 13%;
+    height: 15%;
 
     background: linear-gradient(#83ced9, #61b7c6);
 
@@ -246,16 +250,14 @@ body {
 }
 
 .water {
-    z-index: 2;
+    z-index: 3;
 }
 
 .hoofdweg {
-    position: absolute;
-
-    left: 48%;
+    left: 46%;
     top: 0;
 
-    width: 8%;
+    width: 6%;
     height: 100%;
 
     background-color: #cbc9c2;
@@ -263,47 +265,28 @@ body {
     border-left: 3px solid white;
     border-right: 3px solid white;
 
-    box-sizing: border-box;
-
-    z-index: 2;
 }
 
 .dwarsweg-boven {
-    position: absolute;
-
     left: 0;
-    top: 28%;
+    top: 20%;
 
     width: 100%;
-    height: 6%;
-
-    background-color: #cbc9c2;
+    height: 5%;
 
     border-top: 3px solid white;
     border-bottom: 3px solid white;
-
-    box-sizing: border-box;
-
-    z-index: 2;
 }
 
 .kadeweg {
-    position: absolute;
-
     left: 0;
-    top: 60%;
+    top: 55%;
 
     width: 100%;
-    height: 6%;
-
-    background-color: #cbc9c2;
+    height: 5%;
 
     border-top: 3px solid white;
     border-bottom: 3px solid white;
-
-    box-sizing: border-box;
-
-    z-index: 2;
 }
 
 
@@ -314,33 +297,9 @@ body {
 
 .weg {
     position: absolute;
-    background-color: #d6d3cd;
-    border: 3px solid white;
-    z-index: 1;
-}
-
-.weg-1 {
-    left: 0;
-    top: 200px;
-
-    width: 100%;
-    height: 35px;
-}
-
-.weg-2 {
-    left: 47%;
-    top: 80px;
-
-    width: 35px;
-    height: 520px;
-}
-
-.weg-3 {
-    left: 0;
-    top: 410px;
-
-    width: 100%;
-    height: 30px;
+    background-color: #cbc9c2;
+    box-sizing: border-box;
+    z-index: 2;
 }
 
 .weg-lijn { 
@@ -356,66 +315,25 @@ body {
 
     background-color: #c86464;
 
-    z-index: 2;
+    z-index: 3;
 }
 
 .fietspad-1 {
-    position: absolute;
-    left: 48%;
+    left: 47%;
     top: 0;
 
-    width: 7px;
-    height: 68%;
+    width: 5px;
+    height: 55%;
     background-color: #c86464;
-
-    z-index: 3;
 }
 
 .fietspad-2 {
-    position: absolute;
     left: 0;
-    top: 64%;
+    top: 57%;
 
     width: 100%;
-    height: 7px;
+    height: 5px;
     background-color: #c86464;
-
-    z-index: 3;
 }
 
-.klein-gebouw {
-    position: absolute;
-
-    background-color: #d5d3cc;
-
-    border: 2px solid #c5c2ba;
-
-    border-radius: 4px;
-
-    z-index: 4;
-}
-
-.klein-1 {
-    left: 10px;
-    top: 260px;
-
-    width: 50px;
-    height: 70px;
-}
-
-.klein-2 {
-    right: 10px;
-    top: 350px;
-
-    width: 45px;
-    height: 90px;
-}
-
-.klein-3 {
-    left: 280px;
-    top: 150px;
-
-    width: 40px;
-    height: 50px;
-}
 
