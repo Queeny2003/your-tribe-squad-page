@@ -16,10 +16,9 @@ body {
 }
 
 .plattegrond { 
-    
     position: relative;
 
-    width: 65%;  
+    width: 67%;  
     aspect-ratio: 4 / 3; /*zorgt dat alles op zn plek blijft zitten ongeacht schermgrootte*/
 
     background-color: #dfe8d5;
@@ -69,6 +68,7 @@ body {
     margin-top: 5px;
 }
 
+/*
 .bph {
     top: 52%;
     left: 39%;
@@ -111,6 +111,7 @@ body {
     background-color: #8c6bb1;
 
 }
+*/
 
 .gebouw:hover { 
     transform: scale(1.08);
@@ -131,6 +132,7 @@ body {
     border-radius: 20px;
     z-index: 1;
 }
+
 
 .gras-1 {
     left: 20px;
@@ -156,7 +158,7 @@ body {
 }
 
 .boom-1 {
-    left: 32%;
+    left: ;
     top: 30%;
 }
 
@@ -215,10 +217,10 @@ body {
     position: absolute;
 
     left: 0;
-    top: 150px;
+    top: 22%;
 
     width: 100%;
-    height: 35px;
+    height: 5%;
 
     background-color: #d6d3cd;
 }
