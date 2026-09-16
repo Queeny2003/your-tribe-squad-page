@@ -19,7 +19,7 @@ Hier hebben we de HREF gebruikt, daarmee wordt het visitekaartje gelinkt naar de
 ### campus.html
 
 # Licentie
-
+hoi
 hallo
 This project is licensed under the terms of the [MIT license](./LICENSE).
 testa
