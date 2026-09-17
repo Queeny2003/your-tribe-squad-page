@@ -1,4 +1,5 @@
 body { 
+    font-family: 'Maven pro';
 
     background-image: url("../assets/greensquadpage.png"); 
     background-size: cover;
@@ -6,6 +7,34 @@ body {
     
     color: #3d342b;
 }
+
+.intro {
+    background: #ece7d8;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: none;
+}
+p {
+    font-size: 32px;
+
+}
+
+h1 {
+    
+    font-size: 64px;
+    color: #4a6b3a;
+
+}
+
+h2 {
+    font-size: 46px;
+    color: #4a6b3a;
+}
+
 
 .eten-inhoud {
     display: flex;
