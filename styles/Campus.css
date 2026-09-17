@@ -9,9 +9,11 @@ body {
     color: #3d342b;
 }
 
-@media (max-width: 700px){
+@media (max-width: 800px){
     .eten-inhoud{
         flex-direction: column;
+        width: 94%;
+        gap: 20px;
     }
     .plattegrond, .informatie {width: 100%;
     }
@@ -58,17 +60,21 @@ h1 {
 }
 
 h2 {
-    font-size: 46px;
+    font-size: clamp(24px, 3vw, 46px);
     color: #4a6b3a;
 }
 
 
+.eten {
+    padding-top: 40px
+}
+
 .eten-inhoud {
     display: flex;
     gap: 30px;
-    align-items: flex-start;
+    align-items: stretch;
 
-    width: 95%;
+    width: 92%;
     max-width: 1400px;
 
     margin: 0 auto;
@@ -79,43 +85,42 @@ h2 {
     container-type: inline-size;
     position: relative;
 
-    width: 67%;  
-    aspect-ratio: 4 / 3; /*zorgt dat alles op zn plek blijft zitten ongeacht schermgrootte*/
-
+    flex: 1;
+    width: 50%;
+    aspect-ratio: 4 / 3;  
+    
     background-color: #dfe8d5;
 
     border-radius: 25px;
     overflow: hidden;
 
 }
-
-.gebouw {
-    width: 8cqw;
-    height: 5cqw;
-    border-radius: 1cqw;
-}
     
 .gebouw strong { font-size: 1.6cqw;}
 .gebouw span { font-size: 1cqw;}
 .fietspad-1, .hoofdweg::after {border-width: 0.3cqw;}
+
 .informatie { 
     
-    width: 35%;
+    flex: 1;
+    width: 50%;
     background-color: white;
-    padding: 30px;
+    padding: clamo(15px 2vw, 30px);
     border-radius: 25px;
-    min-width: 400px;
 
     color: #29251f;
+
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .gebouw { 
     position: absolute;
-    width: 105px;
-    height: 62px;
+    width: 14cqw;
+    height: 9cqw;
 
     border: none;
-    border-radius: 12px;
+    border-radius: 1.5cqw;
 
     color: white;
     cursor: pointer;
@@ -126,65 +131,68 @@ h2 {
 
 .gebouw strong {
     display: block;
-    font-size: 18px;
+    font-size: 2.5cqw;
 }
 
 .gebouw span {
     display: block;
-    font-size: 12px;
-    margin-top: 5px;
+    font-size: 1.5cqw;
+    margin-top: 0.5cqw;
 }
 
 .bph {
     top: 41%;
     left: 1%;
-    width: 100px;
-    height: 60px;
+    width: 14cqw;
+    height: 9cqw;
     background-color: #e9874a;
 }
 
 .kmh {
     top: 41%;
     left: 87%;
-    width: 95px;
-    height: 60px;
+    width: 13cqw;
+    height: 9cqw;
     background-color: #e9b949;
 }
 
 .wbh { 
     top: 27%;
     left: 17%;
-    height: 60px;
+    width: 14cqw;
+    height: 9cqw;
     background-color: #6fa36b;
 }
 
 .tth {
     left: 55%;
     top: 27%;
-    width: 120px;
-    height: 130px;
+    width: 16cqw;
+    height: 20cqw;
     background-color: #c27ba0;
 }
 
 .ksh {
     left: 75%;
     top: 27%;
-    width: 110px;
+    width: 15cqw;
+    height: 9cqw;
     background-color: #6f9ed6;
 }
 
 .mlh {
     left: 13%;
     top: 4%;
-    width: 130px;
+    width: 17cqw;
+    height: 9cqw;
     background-color: #d46a6a; 
 }
 
 .jmh {
     left: 72%;
     top: 40%;
-    width: 87px;
-    height: 60px;
+    width: 12cqw;
+    height: 9cqw;
     background-color: #8c6bb1;
 }
 
