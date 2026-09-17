@@ -9,6 +9,13 @@ body {
     color: #3d342b;
 }
 
+@media (max-width: 700px){
+    .eten-inhoud{
+        flex-direction: column;
+    }
+    .plattegrond, .informatie {width: 100%;
+    }
+}
 
 
 .intro {
@@ -69,19 +76,30 @@ h2 {
 }
 
 .plattegrond { 
+    container-type: inline-size;
     position: relative;
 
     width: 67%;  
     aspect-ratio: 4 / 3; /*zorgt dat alles op zn plek blijft zitten ongeacht schermgrootte*/
 
     background-color: #dfe8d5;
-    
+
     border-radius: 25px;
     overflow: hidden;
+
 }
 
-
+.gebouw {
+    width: 8cqw;
+    height: 5cqw;
+    border-radius: 1cqw;
+}
+    
+.gebouw strong { font-size: 1.6cqw;}
+.gebouw span { font-size: 1cqw;}
+.fietspad-1, .hoofdweg::after {border-width: 0.3cqw;}
 .informatie { 
+    
     width: 35%;
     background-color: white;
     padding: 30px;
@@ -118,15 +136,15 @@ h2 {
 }
 
 .bph {
-    top: 46%;
-    left: 18%;
+    top: 41%;
+    left: 1%;
     width: 100px;
     height: 60px;
     background-color: #e9874a;
 }
 
 .kmh {
-    top: 45.5%;
+    top: 41%;
     left: 87%;
     width: 95px;
     height: 60px;
@@ -135,8 +153,8 @@ h2 {
 
 .wbh { 
     top: 27%;
-    left: 7%;
-    height: 130px;
+    left: 17%;
+    height: 60px;
     background-color: #6fa36b;
 }
 
@@ -163,8 +181,8 @@ h2 {
 }
 
 .jmh {
-    left: 75%;
-    top: 45%;
+    left: 72%;
+    top: 40%;
     width: 87px;
     height: 60px;
     background-color: #8c6bb1;
@@ -185,7 +203,6 @@ h2 {
     z-index: 6;
 }
 
-
 .metro-station-weesperplein {
     left: 2%;
     top: 80%;
@@ -194,8 +211,6 @@ h2 {
     background-color: #4e77f5;
 
 }
-
-
 
 .gebouw:hover { 
     transform: scale(1.08);
@@ -216,7 +231,6 @@ h2 {
     border-radius: 20px;
     z-index: 1;
 }
-
 
 .gras-1 {
     left: 62%;
@@ -262,7 +276,7 @@ h2 {
 }
 
 .boom-5 {
-    left: 12%;
+    left: 17%;
     top: 78%;
 }
 
@@ -411,12 +425,23 @@ h2 {
     z-index: 2;
 }
 
-.weg-lijn { 
+.dwarsweg-boven::after,
+.kadeweg::after {
+    content: "";
     position: absolute;
     top: 50%;
     left: 0;
     width: 100%;
     border-top: 2px dashed white;
+}
+
+.hoofdweg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    border-left: 2px dashed white;
 }
 
 .fietspad {
@@ -477,6 +502,24 @@ h2 {
     top: 25%;
 
     width: 100%;
+    height: 4px;
+    background-color: #c86464;
+}
+
+.fietspad-kade-links {
+    position: absolute;
+    left: 0;
+    width: 46%;      /* stopt precies waar de hoofdweg begint */
+    top: 58.93%;
+    height: 4px;
+    background-color: #c86464;
+}
+
+.fietspad-kade-rechts {
+    position: absolute;
+    left: 52%;        /* begint precies waar de hoofdweg eindigt (46% + 6%) */
+    width: 48%;
+    top: 58.93%;
     height: 4px;
     background-color: #c86464;
 }
