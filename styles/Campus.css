@@ -16,6 +16,7 @@ body {
     padding: 10px;
     
     background: #ece7d8;
+    opacity: 70%;
     margin: 0px;
 
     display: flex;
@@ -25,7 +26,7 @@ body {
 
 }
 
-p {
+.intro-tekst {
     margin-block-start: 0.25em;
     margin-block-end: 0.25em;
 
