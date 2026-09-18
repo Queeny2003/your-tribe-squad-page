@@ -8,7 +8,7 @@
 body {
     font-family: 'Maven pro';
 
-    background-image: url("greensquadpage.png"); 
+    background-image: url("../assets/greensquadpage.png"); 
     background-size: cover;
     backdrop-filter: blur(6px);
 
